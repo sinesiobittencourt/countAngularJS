@@ -11,8 +11,8 @@ timerApp.controller('CountdownController', ['$scope', '$timeout',
               	//Font: http://extraconversion.com/pt/tempo/horas
               
               } 
-          if ($scope.count <= 0) {	
-             		$scope.count = 0;	
+          if ($scope.count < 1) {	
+             		$scope.count = "É hoje";	
               }
       };
       $scope.decrement();
